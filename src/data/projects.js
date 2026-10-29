@@ -16,7 +16,7 @@ export const featuredProjects = [
     description: "A responsive grocery delivery frontend inspired by quick-commerce apps, featuring product browsing, cart interactions, and a checkout flow.",
     features: ["Responsive product listings", "Category browsing", "Shopping cart interactions", "Checkout flow"],
     tech: ["HTML", "Tailwind CSS", "JavaScript"],
-    github: "", demo: "", team: "Frontend project"
+    github: "https://github.com/mohantysonali1228-cpu/Grocery_-Delivery-_Website-", demo: "https://grocery-delivery-website-one.vercel.app/", team: "Frontend project"
   },
   {
     title: "Calculator",
@@ -25,7 +25,7 @@ export const featuredProjects = [
     description: "A clean, interactive calculator for basic arithmetic operations with a simple, user-friendly interface.",
     features: ["Basic arithmetic", "Responsive interface", "Keyboard-friendly controls"],
     tech: ["HTML", "CSS", "JavaScript", "Vercel"],
-    github: "", demo: "", team: "Individual project"
+    github: "https://calculator-4ygjgvy83-sonali-subhadarshini-moharana.vercel.app/", demo: "https://github.com/sonalisubhadarshinimoharana2004/CALCULATOR", team: "Individual project"
   },
   {
     title: "Analog Clock",
@@ -34,7 +34,7 @@ export const featuredProjects = [
     description: "A responsive analog clock that displays current time with animated hour, minute, and second hands.",
     features: ["Live current time", "Animated clock hands", "Responsive layout"],
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "", demo: "", team: "Individual project"
+    github: "https://github.com/sonalisubhadarshinimoharana2004/ANALOG-CLOCK", demo: "https://analog-clock-one-xi.vercel.app/", team: "Individual project"
   }
 ];
 
