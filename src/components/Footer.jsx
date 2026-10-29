@@ -1,0 +1,8 @@
+import { ArrowUp, Github, Linkedin } from "lucide-react";
+const links = ["About","Skills","Experience","Projects","Education","Certifications","Contact"];
+export default function Footer() {
+  return <footer className="border-t border-white/[.07] bg-[#060812] py-8"><div className="container-page flex flex-col items-center justify-between gap-5 text-center md:flex-row md:text-left"><div><p className="font-semibold">Designed and built by <span className="gradient-text">Sonali Subhadarshini Moharana</span>.</p><p className="mt-2 text-xs text-slate-500">© {new Date().getFullYear()} · Built with React and Tailwind CSS</p></div>
+    <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-slate-400" aria-label="Footer navigation">{links.map(l=><a key={l} href={`#${l.toLowerCase()}`} className="hover:text-cyan-200">{l}</a>)}</nav>
+    <div className="flex items-center gap-3"><a aria-label="GitHub" className="text-slate-400 hover:text-white" href="https://github.com/sonalisubhadarshinimoharana2004" target="_blank" rel="noreferrer"><Github size={18}/></a><a aria-label="LinkedIn" className="text-slate-400 hover:text-white" href="https://linkedin.com/in/sonali-subhadarshini-mohana" target="_blank" rel="noreferrer"><Linkedin size={18}/></a><a href="#home" aria-label="Back to top" className="rounded-full border border-white/10 p-2 text-slate-300 hover:border-cyan-300/30 hover:text-cyan-200"><ArrowUp size={16}/></a></div>
+  </div></footer>;
+}

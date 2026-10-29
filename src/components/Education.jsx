@@ -1,0 +1,8 @@
+import { GraduationCap, CalendarDays, Award } from "lucide-react";
+import SectionTitle from "./SectionTitle";
+import { education } from "../data/education";
+export default function Education() {
+  return <section id="education" className="section"><div className="container-page"><SectionTitle eyebrow="Education" title={<>The foundation of my <span className="gradient-text">journey</span></>} description="My academic path in computer science and software development."/>
+    <div className="relative ml-2 border-l border-violet-300/25 pl-6 sm:ml-4 sm:pl-9">{education.map((item,i)=><article key={item.degree} className="relative mb-5 last:mb-0"><div className="absolute -left-[33px] top-5 flex h-9 w-9 items-center justify-center rounded-xl border border-violet-300/20 bg-[#17162c] text-violet-200 sm:-left-[46px]"><GraduationCap size={17}/></div><div className="glass rounded-2xl p-5 sm:p-6"><div className="flex flex-wrap items-start justify-between gap-3"><div><h3 className="text-lg font-bold">{item.degree}</h3><p className="mt-2 text-sm text-cyan-100">{item.institution}</p><p className="muted mt-1 text-sm">{item.affiliation}</p></div><span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300"><CalendarDays size={13}/>{item.duration}</span></div><div className="mt-4 inline-flex items-center gap-2 text-sm text-slate-300"><Award size={15} className="text-violet-300"/>{item.result}</div></div></article>)}</div>
+  </div></section>;
+}
